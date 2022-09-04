@@ -1,0 +1,227 @@
+
+// ========== MEDIA SCREEN FOR SMALL DEVICES ============== //
+@media screen and (max-width:620px){
+    //====  INDIPENDENT COMPONENTS ====//
+    .center-pd{
+        padding: 10px
+    }
+
+    .main-title {
+        h2{
+            font-size: 2rem;
+        }
+        .bg-text {
+            font-size: 3rem;
+            letter-spacing: 1.5px;
+            white-space: nowrap;
+        }
+    }
+
+    h1{
+        font-size: 1.5rem !important;
+    }
+    h2{
+        font-size: 1.6rem;
+     }
+    p{
+        font-size: 1rem;
+    }
+    //==== HEADER SECTION ====//
+    .header-center {
+        grid-template-columns: 1fr;
+        row-gap: 2.75rem;
+        .header-left-side {
+            height: 95%;
+            .shape {
+                width: 100%;
+            }
+          .image {
+                height: 90%;
+                border-right: none;
+                border-radius: 20px 0 0 0;
+                width:100%;
+                img {
+                    height: 90%;
+                    width: 66%;
+                }
+            }
+        }
+        .header-right-side {
+            grid-row: 1;
+            padding: 1rem;
+        }
+    }
+
+    //==== ABOUT SECTION =====//
+    .about-center {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        .about-right {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 1rem;
+        .box {
+                height: 145px;
+                text-align: center;
+            }
+        }
+    }
+
+    // == ABOUT TIMELINE == //
+    .timeline-center {
+        grid-template-columns: 1fr !important;
+        padding-bottom: 7rem;
+    }
+
+    //==== PORTFOLIO SECTION ====//
+    #portfolio{
+        padding-bottom:4rem;
+        .portfolio-center {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    //==== BLOG SECTION ====//
+    #blog{
+        padding-bottom:4rem;
+        .blog-center {
+            padding-top: 2rem;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    //==== CONTACT SECTION ====//
+    #contact{
+        padding-bottom:5rem;
+        .contact-center {
+            padding-top: 2rem;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    //========= CONTROLLS ==========/
+   // == MENU CONTROLLS 
+        .controls {
+            top: 91.5%;
+            transform: translateX(-50%);
+            left: 50%;
+            background: var(--clr-grey-1);
+            padding: 10px;
+            width: 100%;
+            height: 75px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .control {
+            height: 37px;
+            i{
+                font-size: 1rem;
+            }
+        &:not(:last-child) {
+                 margin-bottom: 0;
+            }
+        }
+    }
+
+    //== THEME CONTROLL
+    .theme-control {
+        top: 3.5rem !important;
+        right: 1rem !important;
+    }
+}
+
+
+// ========== MEDIA SCREEN FOR MEDIUM DEVICES ============== //
+@media screen and (min-width:621px) and (max-width:920px){
+    //====  INDIPENDENT COMPONENTS ====//
+    .center-pd {
+        padding: 2rem 2rem;
+    }
+
+    .main-title {
+        h2{
+            font-size: 2.5rem;
+        }
+        .bg-text {
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            white-space: nowrap;
+        }
+    }
+
+    //===== HEADER SECTION =====//
+    .header-center {
+        grid-template-columns: 1fr;
+        min-height: 100%;
+       .header-left-side {
+            height: 60vh;
+            order: 2;
+            .shape {
+                width: 100%;
+                height: 100vh;
+                clip-path: none;
+            }
+            .image {
+                height: 100%;
+                width: 100%;
+                border-radius: 0;
+            }
+        }
+        .header-right-side {
+            padding: 1rem;
+            height: 30vh;
+        }
+    }
+
+    //==== ABOUT SECTION =====//
+    #about{
+        padding-bottom:15rem;
+    }
+
+    //==== PORTFOLIO SECTION ====//
+    #portfolio{
+        padding-bottom:15rem;
+        .portfolio-center {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    //==== BLOG SECTION ====//
+    #blog{
+        padding-bottom:15rem;
+        .blog-center {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.5rem;
+            margin-top: 5rem;
+        }
+    }
+
+    //==== CONTACT SECTION ====//
+    .contact-center {
+        grid-template-columns: repeat(1, 1fr);
+        .contact-left .contact-infos {
+            margin-top: 5rem;
+        }
+        .contact-right .contact-form input, .contact-center .contact-right .contact-form textarea {
+            margin-bottom: 3rem;
+        }
+    }
+
+   //===== CONTROLLS =====/
+    .controls {
+        right: 0%;
+        width: 100%;
+        height: 6rem;
+        top: 90%;
+        display: flex;
+        transform: translateY(0%);
+        justify-content: space-around;
+        padding: 1rem;
+        align-items: center;
+        background: var(--clr-grey-1);
+        .control:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+}
